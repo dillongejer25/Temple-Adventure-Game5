@@ -18,6 +18,15 @@ public class Main {
          Enemy GiantSpider = new Enemy("GiantSpider", 30, 40);
          Enemy bigLion = new Enemy("bigLion", 50, 60);
 
+        System.out.println(goldbar);
+        System.out.println(magicSword);
+        System.out.println(softPillow);
+        System.out.println(bigMace);
+        System.out.println(greenOgre);
+        System.out.println(redOgre);
+        System.out.println(slowZombie);
+        System.out.println(fastZombie);
+        System.out.println(spotDog);
 
 
 

@@ -19,8 +19,7 @@ public class Enemy {
     //Health Check Method: return boolean value, accepts no input arguments
     //Player is alive if health points are greater than zero
 
-    public boolean is_alive(){
-        return (this.hp > 0);
+    public String toString() {
+        return String.format("%s \n=====\n %s \nValue= %d \n", this.name, this.hp, this.damage);
     }
-
 }
