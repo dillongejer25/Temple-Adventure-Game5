@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
+
+        //Weapons
         //goldBar, magicSword, softPillow, and bigMace
         Gold goldbar = new Gold(50);
         Weapon magicSword = new Weapon("magicSword", "Super Sword", 10,50);
@@ -8,25 +10,45 @@ public class Main {
         Weapon coolArrow = new Weapon("coolArrow", "Magic Arrow", 25,80);
 
 
-
+        //Enemies
         ///greenOgre, redOgre, slowZombie, fastZombie, spotDog, scarySpider, dashLion
-         Enemy greenOgre = new Enemy("greenOgre", 10, 50);
-         Enemy redOgre = new Enemy("redOgre", 10, 50);
-         Enemy slowZombie = new Enemy("slowZombie", 20, 15);
-         Enemy fastZombie = new Enemy("fastZombie", 20, 15);
-         Enemy spotDog = new Enemy("spotDog", 20, 15);
-         Enemy GiantSpider = new Enemy("GiantSpider", 30, 40);
-         Enemy bigLion = new Enemy("bigLion", 50, 60);
+        Enemy greenOgre = new Enemy("greenOgre", 10, 50);
+        Enemy redOgre = new Enemy("redOgre", 10, 50);
+        Enemy slowZombie = new Enemy("slowZombie", 20, 15);
+        Enemy fastZombie = new Enemy("fastZombie", 20, 15);
+        Enemy spotDog = new Enemy("spotDog", 20, 15);
+        Enemy GiantSpider = new Enemy("GiantSpider", 30, 40);
+        Enemy bigLion = new Enemy("bigLion", 50, 60);
 
-        System.out.println(goldbar);
-        System.out.println(magicSword);
-        System.out.println(softPillow);
-        System.out.println(bigMace);
-        System.out.println(greenOgre);
-        System.out.println(redOgre);
-        System.out.println(slowZombie);
-        System.out.println(fastZombie);
-        System.out.println(spotDog);
+
+        Player player1 = new Player("Dillon", (short)100, (short)10, true);
+        if (player1.getLife())
+            System.out.println("Player is alive");
+        else
+            System.out.println("Player is not alive");
+
+        Player player2 = new Player("Emily", (short)10, (short)100, true);
+        if (player2.getLife())
+            System.out.println("Player is alive");
+        else
+            System.out.println("Player is not alive");
+
+
+
+        //Print Sequences
+
+
+        //System.out.println(goldbar);
+        //System.out.println(magicSword.name + " " + magicSword.description + " " + magicSword.value + " " + magicSword.getDamage());
+        //System.out.println(softPillow.name + " " + softPillow.description + " " + softPillow.value + " " + softPillow.getDamage());
+        //System.out.println(bigMace.name + " " + bigMace.description + " " + bigMace.value + " " + bigMace.getDamage());
+
+        //System.out.println(greenOgre);
+        //System.out.println(redOgre);
+        //System.out.println(slowZombie);
+        //System.out.println(fastZombie);
+        //System.out.println(spotDog);
+
 
 
 
