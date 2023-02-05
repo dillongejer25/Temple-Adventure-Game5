@@ -1,8 +1,6 @@
 public class GiantSpider extends Enemy{
 
-    public GiantSpider(){
-
-        super("Giant Spider", 30, 40);
-
+    public GiantSpider(String name, String description, int hp,int damage){
+        super("GiantSpider","a 8 legged monster", 10,2);
     }
 }

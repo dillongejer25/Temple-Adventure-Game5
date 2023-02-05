@@ -12,13 +12,14 @@ public class Main {
 
         //Enemies
         ///greenOgre, redOgre, slowZombie, fastZombie, spotDog, scarySpider, dashLion
-        Enemy greenOgre = new Enemy("greenOgre", 10, 50);
-        Enemy redOgre = new Enemy("redOgre", 10, 50);
-        Enemy slowZombie = new Enemy("slowZombie", 20, 15);
-        Enemy fastZombie = new Enemy("fastZombie", 20, 15);
-        Enemy spotDog = new Enemy("spotDog", 20, 15);
-        Enemy GiantSpider = new Enemy("GiantSpider", 30, 40);
-        Enemy bigLion = new Enemy("bigLion", 50, 60);
+
+        Ogre greenOgre = new Ogre("greenOgre", "A scary green Ogre", 30,20 );
+        Ogre redOgre = new Ogre("redOgre","A scary red Ogre", 30, 20);
+        Zombie slowZombie = new Zombie("slowZombie", "an ugly green and slow zombie", 20, 15);
+        Zombie fastZombie = new Zombie("fastZombie", "an ugly green and fast zombie", 20, 15);
+        Dog spotDog = new Dog("spotDog", "a quick 4 legged thing",20, 15);
+        GiantSpider GiantSpider = new GiantSpider("GiantSpider","8 legged monster", 10, 2);
+        Lion bigLion = new Lion("bigLion","a powerful boss like creature" , 50, 60);
 
 
         Player player1 = new Player("Dillon", (short)100, (short)10, true);
