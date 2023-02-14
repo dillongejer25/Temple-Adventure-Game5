@@ -22,6 +22,19 @@ public class Main {
         Lion bigLion = new Lion("bigLion","a powerful boss like creature" , 50, 60);
 
 
+
+
+        MoveEast moveEast = new MoveEast();
+        MoveWest moveWest = new MoveWest();
+        MoveSouth moveSouth = new MoveSouth();
+        MoveNorth moveNorth = new MoveNorth();
+        Action flee = new Flee();
+        Action Leap = new Leap();
+        Action ViewInventory = new ViewInventory();
+
+        //System.out.println(prone.Str());
+
+
         Player player1 = new Player("Dillon", (short)100, (short)10, true);
         if (player1.getLife())
             System.out.println("Player is alive");
