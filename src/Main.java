@@ -47,7 +47,8 @@ public class Main {
         else
             System.out.println("Player is not alive");
 
-
+        World world = new World();
+        world.load_tiles();
 
         //Print Sequences
 
