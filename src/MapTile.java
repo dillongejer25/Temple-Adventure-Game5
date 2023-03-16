@@ -27,4 +27,14 @@ public class MapTile {
             return false;
         return true;
     }
+
+    public List<MapTile> adjacent_moves() {
+        List<MapTile> adjacents = new ArrayList<>();
+        adjacents.add(new MapTile(x + 1, y)); // Right
+        adjacents.add(new MapTile(x - 1, y)); // Left
+        adjacents.add(new MapTile(x, y + 1)); // Down
+        adjacents.add(new MapTile(x,y - 1)); // Up
+        return adjacents;
+
+    }
 }
