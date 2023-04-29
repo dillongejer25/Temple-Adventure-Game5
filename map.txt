@@ -1,0 +1,5 @@
+ 	 	 	 	ExitTemple
+			SandRoom	SuperSwordRoom
+ 	 	 	DarkRoom
+ 	 	 	GiantSnakeRoom
+GuardRoom	SandRoom	EnterTemple	SuperSwordRoom	 FindLazerRoom
