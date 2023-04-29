@@ -28,13 +28,29 @@ public class MapTile {
         return true;
     }
 
-    public List<MapTile> adjacent_moves() {
-        List<MapTile> adjacents = new ArrayList<>();
-        adjacents.add(new MapTile(x + 1, y)); // Right
-        adjacents.add(new MapTile(x - 1, y)); // Left
-        adjacents.add(new MapTile(x, y + 1)); // Down
-        adjacents.add(new MapTile(x,y - 1)); // Up
-        return adjacents;
+    public ArrayList<Action> adjacent_moves(){
+        ArrayList<Action> moves = new ArrayList<>();
+        if (World.tile_exists(x, y +1) !=null)
+            moves.add(new MoveEast());
+        if (World.tile_exists(x, y -1) !=null)
+            moves.add(new MoveWest());
+        if (World.tile_exists(x -1, y) !=null)
+            moves.add(new MoveNorth());
+        if (World.tile_exists(x +1, y) !=null)
+            moves.add(new MoveSouth());
+        return moves;
+    }
+    public ArrayList<Action> available_actions(){
+        ArrayList<Action> moves = new ArrayList<>();
+        moves = adjacent_moves();
+        moves.add(new ViewInventory());
+        return moves;
+    }
+    public String intro_text(){return null;
+    }
+
+    public void modify_player(Player player) {
 
     }
+
 }

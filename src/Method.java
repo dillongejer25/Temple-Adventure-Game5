@@ -1,3 +1,3 @@
 public enum Method {
-    Flee, Leap, ViewInventory, MoveEast, MoveWest, MoveSouth, MoveNorth
+    Flee, Leap, ViewInventory, MoveEast, MoveWest, MoveSouth, MoveNorth, Attack
 }
